@@ -1,9 +1,9 @@
-function Heading(){
-    let title="I'm learning React!"
+function Heading(props){
     return (
-        <h2>{title}</h2> 
-        // Curly brackets have to be applied to use the text from the variable,
-        // not just text "title" itself.
+        <>
+        <h1>Learning plan</h1>
+        <h2>Right now I'm learning {props.currentFramework}, soon I'll start learning {props.nextFramework}</h2> 
+        </>
     );
 };
 export default Heading;

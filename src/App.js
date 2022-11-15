@@ -7,7 +7,7 @@ import Heading from './Heading';
 function App() {
   return (
     <div className="App">
-      <Heading />
+      <Heading  currentFramework="React" nextFramework="Next.js" />
       <Nav />
       <Main />
     </div>
