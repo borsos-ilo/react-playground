@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 2rem;
+}
+
+ul li {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+}

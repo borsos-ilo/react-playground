@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../styles/App.css';
 import Main from './Main';
 import Nav from './Nav';
 import Heading from './Heading';
@@ -7,8 +7,9 @@ import Heading from './Heading';
 function App() {
   return (
     <div className="App">
-      <Heading  currentFramework="React" nextFramework="Next.js" />
       <Nav />
+      <Heading  currentFramework="React" nextFramework="Next.js">
+      </Heading>
       <Main />
     </div>
   );
