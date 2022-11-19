@@ -4,6 +4,8 @@ import Main from './Main';
 import Nav from './Nav';
 import Heading from './Heading';
 import Button from './Button'
+import Input from './Input'
+import Focus from './Focus';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       </Heading>
       <Button/>
       <Main />
+      <Input />
+      <Focus />
     </div>
   );
 }
