@@ -1,22 +1,20 @@
-import logo from '../logo.svg';
 import '../styles/App.css';
-import Main from './Main';
-import Nav from './Nav';
-import Heading from './Heading';
-import Button from './Button'
-import Input from './Input'
-import Focus from './Focus';
+import React from 'react';
+import {BrowserRouter as Router, Link, Routes, Route} from 'react-router-dom'
+import FrameworksList from './FrameworksList';
+
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Heading  currentFramework="React" nextFramework="Next.js">
-      </Heading>
-      <Button/>
-      <Main />
-      <Input />
-      <Focus />
+      <Router>
+        <nav>
+        <Link to="/plans" className="nav-item">plans</Link>
+        </nav>
+        <Routes>
+          <Route path="/plans" element={<FrameworksList />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

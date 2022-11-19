@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 function Button() {
     const [inputText, setInputText] = useState("Default text"); // first one is variable, second is actually a function that changes the value of the first one 
